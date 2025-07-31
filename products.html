@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" alt="logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Product</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-layout">
+        <aside class="sidebar">
+            <ul id="categorylist"></ul> <!-- Fixed: valid ID, no space -->
+        </aside>
+
+        <div class="main-content">
+            <h1>My Products</h1>
+            <div class="search-sort-bar">
+                <input type="text" id="searchbox" placeholder="Search...">
+                <select id="sortselect">
+                    <option value="">Sort by</option>
+                    <option value="lowtohigh">Price: Low to High</option>
+                    <option value="hightolow">Price: High to Low</option> <!-- Fixed: typo -->
+                </select>
+            </div>
+
+            <div id="products"></div>
+            <div id="error1" style="color: red; margin-top: 10px;"></div> <!-- Optional: for showing error messages -->
+        </div>
+    </div>
+
+    <script src="product.js"></script>
+</body>
+</html>
